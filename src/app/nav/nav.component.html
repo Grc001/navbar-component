@@ -1,0 +1,62 @@
+<body>
+    
+<div class="navbody">
+<div class ="navigation">
+    <ul>
+            <li class="list active">
+            <a href="#"><span class="text">Accueil</span>
+                <span class="icon">
+                    <img src="../assets/medias/accueil.svg" alt="icone accueil">
+                </span>
+                
+            </a></li>
+            <li class="list">
+            <a href="#"> <span class="text">Catalogue</span>
+                <span class="icon">
+                    <img src="../assets/medias/Catalogue.svg" alt="icone catalogue">
+                </span>
+               
+            </a></li>
+            <li class="list">
+            <a href="#"><span class="text">Commandes</span>
+                <span class="icon">
+                    <img src="../assets/medias/Commandes.svg" alt="icone Commandes">
+                </span>
+                
+            </a></li>
+            <li class="list">
+            <a href="#"><span class="text">Favoris</span>
+                <span class="icon">
+                    <img src="../assets/medias/Favoris.svg" alt="icone favoris">
+                </span>
+                
+            </a></li>
+            <li class="list">
+            <a href="#"><span class="text">Profil</span>
+                <span class="icon">
+                    <img src="../assets/medias/Profil.svg" alt="icone Profil">
+                </span>
+                
+            </a></li>
+            <li class="list">
+            <a href="#"><span class="text">Panier</span>
+                <span class="icon">
+                    <img src="../assets/medias/Panier.svg" alt="icone Panier">
+                </span>
+                
+            </a></li>
+            <div class="indicator">
+                <img src="../assets/medias/Drop.png" alt="selecteur d'onglet">
+            </div>
+    </ul>
+</div>
+</div>
+<script>
+    const list = document.querySelectorAll('list');
+    function activeLink(){
+        list.forEach((item) => item.classList.add('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item) => item.addEventListener('click', activeLink))
+</script>
+</body>
